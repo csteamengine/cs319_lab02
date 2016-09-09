@@ -3,22 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Validation Form</title>
+    <link rel="stylesheet" href="../style.css">
+
 </head>
 <body>
 
-    <form id="validation_form">
+    <form id="validation_form" action="../validation2/validation2.html" method="post">
         <label for="f_name">First Name: </label>
         <input type="text" name="f_name" id="f_name">
+        <img id="f_name_right" src="../correct.png" hidden>
+        <img id="f_name_wrong" src="../wrong.png" hidden>
+        <br>
         <label for="l_name">Last Name: </label>
         <input type="text" name="l_name" id="l_name">
+        <img id="l_name_right" src="../correct.png" hidden>
+        <img id="l_name_wrong" src="../wrong.png" hidden>
+        <br>
         <label for="gender">Gender: </label>
         <select name="gender" id="gender">
+            <option value=" "></option>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
         </select>
+        <img id="gender_right" src="../correct.png" hidden>
+        <img id="gender_wrong" src="../wrong.png" hidden>
+        <br>
         <label for="state">State: </label>
         <select name="state" id="state">
-            <option value=""></option>
+            <option value=" "></option>
             <option value="california">California</option>
             <option value="florida">Florida</option>
             <option value="new_york">New York</option>
@@ -30,9 +42,14 @@
             <option value="iowa">Iowa</option>
             <option value="arizona">Arizona</option>
         </select>
-
+        <img id="state_right" src="../correct.png" hidden>
+        <img id="state_wrong" src="../wrong.png" hidden>
+        <br>
+        <input type="submit" value="Continue" >
     </form>
 
+    <script src="validation1.js" type="application/javascript"></script>
 
 </body>
+
 </html>
