@@ -47,6 +47,8 @@ document.getElementById('validation_form').addEventListener('submit',function(ev
     }
 
     if(valid){
+        event.preventDefault();
+        window.location = '../validation2/validation2.html';
         document.cookie = 'state='+state.value;
     }else{
         event.preventDefault();

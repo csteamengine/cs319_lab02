@@ -44,8 +44,10 @@ document.getElementById('validation2_form').addEventListener('submit',function(e
     if(!valid){
         event.preventDefault();
     }else{
+        event.preventDefault();
         localStorage.setItem('address',address.value);
         document.cookie = 'state=; expires=Thu, 01 Jan 1970 00:00:00 UTC';
+        window.location = '../maps.html';
     }
 
 
